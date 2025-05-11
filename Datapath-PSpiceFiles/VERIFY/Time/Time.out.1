@@ -1,0 +1,307 @@
+
+**** 01/12/22 17:33:41 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "VERIFY-Time"  [ C:\Cadence\Designs\VLSI-21\VLSI-21\datapath-pspicefiles\verify\time.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Time.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_16.5/tools/pspice/library/UMC_018-TT.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+---------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 8ns 0 1p 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\VERIFY.net" 
+
+
+
+**** INCLUDING VERIFY.net ****
+* source DATAPATH
+V_V1         A2 0 1.8Vdc
+V_V3         N07682 0  
++PULSE 0 1.8 0 10p 10p 990p 2n
+M_shif_oxi_M1         shif_N00763 N07682 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_oxi_M2         shif_N00763 N07682 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n2_M1         shif_N00259 A2 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n2_M2         shif_N00259 A2 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_nt2_M1         Z2 shif_ahifter2_N02236 A2 A2 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_shif_ahifter2_nt2_M2         Z2 shif_ahifter2_N02236 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_shif_ahifter2_pass_M1         shif_N00284 shif_N00763 shif_ahifter2_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_pass_M2         shif_ahifter2_N02236 shif_ahifter2_N02349
++  shif_N00284 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n3_M1         shif_ahifter2_N02323 N07682 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n3_M2         shif_ahifter2_N02323 N07682 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n1_M1         shif_ahifter2_N02349 shif_N00763 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_n1_M2         shif_ahifter2_N02349 shif_N00763 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_pass1_M1         shif_N00198 N07682 shif_ahifter2_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter2_pass1_M2         shif_ahifter2_N02236 shif_ahifter2_N02323
++  shif_N00198 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n2_M1         shif_N00225 0 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n2_M2         shif_N00225 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_nt2_M1         Z0 shif_ahifter_N02236 A2 A2 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_shif_ahifter_nt2_M2         Z0 shif_ahifter_N02236 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_shif_ahifter_pass_M1         shif_N00198 shif_N00763 shif_ahifter_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_pass_M2         shif_ahifter_N02236 shif_ahifter_N02349
++  shif_N00198 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n3_M1         shif_ahifter_N02323 N07682 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n3_M2         shif_ahifter_N02323 N07682 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n1_M1         shif_ahifter_N02349 shif_N00763 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_n1_M2         shif_ahifter_N02349 shif_N00763 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_pass1_M1         A2 N07682 shif_ahifter_N02236 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter_pass1_M2         shif_ahifter_N02236 shif_ahifter_N02323 A2 A2
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n2_M1         shif_N00284 A2 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n2_M2         shif_N00284 A2 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_nt2_M1         Z3 shif_ahifter3_N02236 A2 A2 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_shif_ahifter3_nt2_M2         Z3 shif_ahifter3_N02236 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_shif_ahifter3_pass_M1         A2 shif_N00763 shif_ahifter3_N02236 0 MbreakND 
++  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_pass_M2         shif_ahifter3_N02236 shif_ahifter3_N02349 A2 A2
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n3_M1         shif_ahifter3_N02323 N07682 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n3_M2         shif_ahifter3_N02323 N07682 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n1_M1         shif_ahifter3_N02349 shif_N00763 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_n1_M2         shif_ahifter3_N02349 shif_N00763 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_pass1_M1         shif_N00259 N07682 shif_ahifter3_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter3_pass1_M2         shif_ahifter3_N02236 shif_ahifter3_N02323
++  shif_N00259 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n2_M1         shif_N00198 0 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n2_M2         shif_N00198 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_nt2_M1         Z1 shif_ahifter1_N02236 A2 A2 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_shif_ahifter1_nt2_M2         Z1 shif_ahifter1_N02236 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_shif_ahifter1_pass_M1         shif_N00259 shif_N00763 shif_ahifter1_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_pass_M2         shif_ahifter1_N02236 shif_ahifter1_N02349
++  shif_N00259 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n3_M1         shif_ahifter1_N02323 N07682 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n3_M2         shif_ahifter1_N02323 N07682 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n1_M1         shif_ahifter1_N02349 shif_N00763 A2 A2 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_n1_M2         shif_ahifter1_N02349 shif_N00763 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_pass1_M1         shif_N00225 N07682 shif_ahifter1_N02236 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_shif_ahifter1_pass1_M2         shif_ahifter1_N02236 shif_ahifter1_N02323
++  shif_N00225 A2 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+
+**** RESUMING Time.cir ****
+.END
+

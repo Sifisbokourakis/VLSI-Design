@@ -1,0 +1,1277 @@
+
+**** 01/17/22 12:37:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "VERIFY-Time"  [ C:\Cadence\Designs\VLSI-21\VLSI-21\datapath-pspicefiles\verify\time.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Time.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "C:\Cadence\SPB_16.5\tools\pspice\library\UMC 180nm.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 8ns 0 1p 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\VERIFY.net" 
+
+
+
+**** INCLUDING VERIFY.net ****
+* source DATAPATH
+V_V1         N00487 0 1.8Vdc
+M_rca_xr_MX_PassGate2_M1         rca_xr_MX_N00227 rca_xr_MX_SB rca_xr_MX_N00279
++  0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate2_M2         rca_xr_MX_N00279 N00487 rca_xr_MX_N00227
++  N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT1_M1         rca_xr_MX_N00215 rca_xr_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT1_M2         rca_xr_MX_N00215 rca_xr_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT2_M1         rca_xr_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT2_M2         rca_xr_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT3_M1         rca_xr_MX_SB N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT3_M2         rca_xr_MX_SB N00487 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate1_M1         rca_xr_MX_N00215 N00487 rca_xr_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate1_M2         rca_xr_MX_N00279 rca_xr_MX_SB rca_xr_MX_N00215
++  N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT4_M1         rca_N01555 rca_xr_MX_N00279 N00487 N00487 MbreakPD 
++  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr_MX_NOT4_M2         rca_N01555 rca_xr_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr_NT_M1         rca_xr_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_NT_M2         rca_xr_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nto1_M1         S2 rca_N01870 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_nto1_M2         S2 rca_N01870 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_nto_M1         S0 rca_N01575 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_nto_M2         S0 rca_N01575 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_nt1_M1         0 rca_N01600 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt1_M2         0 rca_N01600 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt3_M1         rca_N01726 rca_N01714 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt3_M2         rca_N01726 rca_N01714 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt2_M1         rca_N01762 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt2_M2         rca_N01762 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M14         rca_add2_N00805 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M12         rca_add2_N02112 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M9         rca_N01856 rca_N01641 rca_add2_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M7         rca_add2_N00677 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M27         rca_add2_TEST 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M6         rca_add2_N00627 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M25         rca_add2_N02047 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M1         rca_add2_N00627 rca_N01641 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M23         S1 rca_N01852 rca_add2_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M21         S1 rca_N01856 rca_add2_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M19         rca_add2_N01985 rca_N01641 rca_add2_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M17         rca_add2_N01621 rca_N01852 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M15         rca_add2_N01621 rca_N01641 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M13         rca_add2_N00805 rca_N01641 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M10         rca_N01856 rca_N01852 rca_add2_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M8         rca_N01856 rca_N01852 rca_add2_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M11         rca_N01856 rca_N01641 rca_add2_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M28         rca_add2_TEST rca_N01641 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M26         rca_add2_TEST rca_N01852 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M24         rca_add2_N01678 rca_N01641 rca_add2_N02047 N00487
++  MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M22         S1 rca_N01856 rca_add2_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M20         S1 rca_N01852 rca_add2_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M18         rca_add2_N01660 0 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M16         rca_add2_N01621 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate2_M1         rca_xr1_MX_N00227 rca_xr1_MX_SB
++  rca_xr1_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate2_M2         rca_xr1_MX_N00279 0 rca_xr1_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT1_M1         rca_xr1_MX_N00215 rca_xr1_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT1_M2         rca_xr1_MX_N00215 rca_xr1_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT2_M1         rca_xr1_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT2_M2         rca_xr1_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT3_M1         rca_xr1_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT3_M2         rca_xr1_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate1_M1         rca_xr1_MX_N00215 0 rca_xr1_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate1_M2         rca_xr1_MX_N00279 rca_xr1_MX_SB
++  rca_xr1_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT4_M1         rca_N01600 rca_xr1_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr1_MX_NOT4_M2         rca_N01600 rca_xr1_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr1_NT_M1         rca_xr1_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_NT_M2         rca_xr1_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M14         rca_add1_N00805 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M12         rca_add1_N02112 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M9         rca_N01852 N00487 rca_add1_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M7         rca_add1_N00677 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M27         rca_add1_TEST rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M6         rca_add1_N00627 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M25         rca_add1_N02047 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M1         rca_add1_N00627 N00487 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M23         rca_N01575 N14760 rca_add1_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M21         rca_N01575 rca_N01852 rca_add1_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M19         rca_add1_N01985 N00487 rca_add1_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M17         rca_add1_N01621 N14760 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M15         rca_add1_N01621 N00487 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M13         rca_add1_N00805 N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M10         rca_N01852 N14760 rca_add1_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M8         rca_N01852 N14760 rca_add1_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M11         rca_N01852 N00487 rca_add1_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M28         rca_add1_TEST N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M26         rca_add1_TEST N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M24         rca_add1_N01678 N00487 rca_add1_N02047 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M22         rca_N01575 rca_N01852 rca_add1_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M20         rca_N01575 N14760 rca_add1_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M18         rca_add1_N01660 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M16         rca_add1_N01621 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate2_M1         rca_xr2_MX_N00227 rca_xr2_MX_SB
++  rca_xr2_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate2_M2         rca_xr2_MX_N00279 0 rca_xr2_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT1_M1         rca_xr2_MX_N00215 rca_xr2_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT1_M2         rca_xr2_MX_N00215 rca_xr2_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT2_M1         rca_xr2_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT2_M2         rca_xr2_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT3_M1         rca_xr2_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT3_M2         rca_xr2_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate1_M1         rca_xr2_MX_N00215 0 rca_xr2_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate1_M2         rca_xr2_MX_N00279 rca_xr2_MX_SB
++  rca_xr2_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT4_M1         rca_N01682 rca_xr2_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr2_MX_NOT4_M2         rca_N01682 rca_xr2_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr2_NT_M1         rca_xr2_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_NT_M2         rca_xr2_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M14         rca_add4_N00805 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M12         rca_add4_N02112 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M9         COUT rca_N01762 rca_add4_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M7         rca_add4_N00677 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M27         rca_add4_TEST rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M6         rca_add4_N00627 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M25         rca_add4_N02047 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M1         rca_add4_N00627 rca_N01762 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M23         S3 rca_N01863 rca_add4_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M21         S3 COUT rca_add4_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M19         rca_add4_N01985 rca_N01762 rca_add4_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M17         rca_add4_N01621 rca_N01863 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M15         rca_add4_N01621 rca_N01762 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M13         rca_add4_N00805 rca_N01762 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M10         COUT rca_N01863 rca_add4_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M8         COUT rca_N01863 rca_add4_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M11         COUT rca_N01762 rca_add4_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M28         rca_add4_TEST rca_N01762 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M26         rca_add4_TEST rca_N01863 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M24         rca_add4_N01678 rca_N01762 rca_add4_N02047 N00487
++  MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M22         S3 COUT rca_add4_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M20         S3 rca_N01863 rca_add4_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M18         rca_add4_N01660 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M16         rca_add4_N01621 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate2_M1         rca_xr3_MX_N00227 rca_xr3_MX_SB
++  rca_xr3_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate2_M2         rca_xr3_MX_N00279 0 rca_xr3_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT1_M1         rca_xr3_MX_N00215 rca_xr3_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT1_M2         rca_xr3_MX_N00215 rca_xr3_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT2_M1         rca_xr3_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT2_M2         rca_xr3_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT3_M1         rca_xr3_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT3_M2         rca_xr3_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate1_M1         rca_xr3_MX_N00215 0 rca_xr3_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate1_M2         rca_xr3_MX_N00279 rca_xr3_MX_SB
++  rca_xr3_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT4_M1         rca_N01714 rca_xr3_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr3_MX_NOT4_M2         rca_N01714 rca_xr3_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr3_NT_M1         rca_xr3_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_NT_M2         rca_xr3_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt_M1         rca_N01641 N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt_M2         rca_N01641 N00487 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M14         rca_add3_N00805 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M12         rca_add3_N02112 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M9         rca_N01863 0 rca_add3_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M7         rca_add3_N00677 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M27         rca_add3_TEST rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M6         rca_add3_N00627 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M25         rca_add3_N02047 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M1         rca_add3_N00627 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M23         rca_N01870 rca_N01856 rca_add3_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M21         rca_N01870 rca_N01863 rca_add3_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M19         rca_add3_N01985 0 rca_add3_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M17         rca_add3_N01621 rca_N01856 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M15         rca_add3_N01621 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M13         rca_add3_N00805 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M10         rca_N01863 rca_N01856 rca_add3_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M8         rca_N01863 rca_N01856 rca_add3_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M11         rca_N01863 0 rca_add3_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M28         rca_add3_TEST 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M26         rca_add3_TEST rca_N01856 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M24         rca_add3_N01678 0 rca_add3_N02047 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M22         rca_N01870 rca_N01863 rca_add3_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M20         rca_N01870 rca_N01856 rca_add3_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M18         rca_add3_N01660 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M16         rca_add3_N01621 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+V_V11         N14760 0  
++PULSE 0 1.8 0 10p 10p 990p 2n
+
+**** RESUMING Time.cir ****
+.END
+
+WARNING(ORPSIM-15236): Parameter HDIF in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTA in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTP in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTA in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTP in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter TLEVC in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter HDIF in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTA in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTP in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTA in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTP in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter TLEVC in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT2_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT2_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT3_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT3_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_NT_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_NT_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt3_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt3_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt2_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt2_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT2_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT2_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT3_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_MX_NOT3_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_NT_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr1_NT_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT2_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT2_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT3_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_MX_NOT3_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_NT_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr2_NT_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT2_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT2_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT3_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_MX_NOT3_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_NT_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr3_NT_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_nt_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+INFO(ORPSIM-15454): Model MbreakND: Using BSIM VERSION 3.1 or lower
+
+INFO(ORPSIM-15454): Model MbreakPD: Using BSIM VERSION 3.1 or lower
+
+**** 01/17/22 12:37:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "VERIFY-Time"  [ C:\Cadence\Designs\VLSI-21\VLSI-21\datapath-pspicefiles\verify\time.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakND        MbreakPD        
+               NMOS            PMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .315559        -.468253     
+          KP  493.306300E-06  493.306300E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+         RSH    8               8            
+          IS    1.000000E-15    1.000000E-15 
+          JS   33.900000E-06   13.000000E-06 
+        JSSW   32.600000E-12   15.000000E-12 
+          PB     .79             .762        
+        PBSW    1               1            
+          CJ    1.190000E-03    1.140000E-03 
+        CJSW  160.000000E-12  174.000000E-12 
+          MJ     .515            .395        
+        MJSW     .381            .324        
+        CGSO  121.000000E-12  158.000000E-12 
+        CGDO  121.000000E-12  158.000000E-12 
+        CGBO    0               0            
+         TOX    4.200000E-09    4.200000E-09 
+          XJ  160.000000E-09  180.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA    1.000000E-03     .015        
+      DIOMOD    2               2            
+          K1     .418147         .475224     
+          K2    -.025055         .03784      
+        LETA    0               0            
+        WETA    0               0            
+          U0     .032614        7.146010E-03 
+       XPART    1               1            
+        VTH0     .315559        -.468253     
+          K3    -.86508         1.82852      
+          W0   10.000000E-21    2.462436E-09 
+         NLX  272.415500E-09   41.141920E-09 
+        DVT0    1.1079          3.749691     
+        DVT1     .481697        1.1007       
+          UA   -1.168402E-09 -869.596000E-12 
+          UB    2.570923E-18    2.096885E-18 
+          UC   83.571000E-12  -30.418200E-12 
+        VSAT  101.374000E+03  188.767800E+03 
+        RDSW   72.95411       140.069        
+        VOFF    -.094204        -.109287     
+     NFACTOR    1.18932         1.76253      
+        CDSC    2.478640E-03    1.646561E-03 
+        PCLM    8.5993          1.139005     
+      PDIBL1    5.383091E-03    1.590000E-03 
+      PDIBL2  208.402200E-06  173.811400E-06 
+       DROUT     .84                         
+      PSCBE1  630.000000E+06  456.047300E+06 
+      PSCBE2   10.000000E-21  908.455500E-06 
+          A0    1.962734        1.739        
+          A1    0               0            
+          A2     .99             .4          
+       NPEAK  356.040000E+15  421.980000E+15 
+         LDD    0               0            
+        LITL   44.899890E-09   47.623520E-09 
+         KT1    -.298           -.38         
+         KT2    -.052           -.052        
+         UA1    1.830000E-09 -210.000000E-12 
+         UB1   -2.610000E-18   -1.010000E-18 
+         UC1  120.000000E-12   86.000000E-12 
+          AT   52.000000E+03    1.000000E+03 
+        PVAG    4.070936        1.753389     
+        KETA   -1.100900E-03   -1.110090E-03 
+        ETA0     .071669         .111642     
+        ETAB   -1.798100E-03    -.04887      
+        KT1L   -5.000000E-09   -8.000000E-09 
+         K3B    1.155           2.56099      
+        DVT2    -.0401         -1.120000E-03 
+       CDSCB  120.059000E-06  414.421000E-06 
+         CIT -258.541000E-06  -79.328180E-06 
+        DSUB     .379041         .52121      
+         UTE   -1.79           -1.75         
+      MOBMOD    1               1            
+      NQSMOD    0               0            
+         AGS     .54479          .440113     
+       DVT0W     .196172        1.57344      
+       DVT1W  367.500000E+03    2.100000E+06 
+       DVT2W    -.080666         .4          
+        PRWG     .2              .601376     
+        PRWB    -.13401        -2.08777      
+         PRT -310            -400            
+     PDIBLCB     .171484         .094574     
+          WR     .94427         1.031559     
+         DWG   -5.320000E-09  -27.302200E-09 
+         DWB    7.701900E-09    6.250000E-09 
+          B0   48.668600E-09   43.449200E-09 
+          B1   14.053400E-09   14.000000E-09 
+        LINT   32.406100E-09  -69.384470E-09 
+          LL  -19.233680E-12  366.127800E-12 
+         LLN     .474442         .35052      
+          LW   -5.000000E-21  -10.000000E-15 
+         LWL    1.427500E-18   21.088900E-18 
+        LMIN  180.000000E-09  180.000000E-09 
+        LMAX   50.000000E-06   50.000000E-06 
+        WINT   19.980000E-09  -37.410000E-09 
+          WL   -5.000000E-21    2.000000E-15 
+          WW   -2.120403E-15 -862.120100E-18 
+         WWN    1.039531        1.054187     
+         WWL -241.500000E-24  720.000000E-24 
+        WMIN  240.000000E-09  240.000000E-09 
+        WMAX  100.000000E-06  100.000000E-06 
+         DLC   32.406100E-09  -69.384470E-09 
+         DWC   19.980000E-09  -37.410000E-09 
+          CF  153.300000E-12  153.300000E-12 
+        NOIA  100.000000E+18    9.900001E+18 
+        NOIB   50.000000E+03    2.400000E+03 
+        NOIC   -1.400000E-12    1.400000E-12 
+         VTM     .025864         .025864     
+     VERSION    3.1             3.1          
+       PBSWG    1               1            
+       MJSWG     .381            .324        
+       CJSWG  160.000000E-12  174.000000E-12 
+       JTSCD   33.900000E-06   13.000000E-06 
+      JSTSCD   32.600000E-12   15.000000E-12 
+
+
+WARNING(ORPSIM-15236): Parameter HDIF in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTA in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTP in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTA in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTP in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter TLEVC in model MbreakND is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter HDIF in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTA in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter CTP in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTA in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter PTP in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15236): Parameter TLEVC in model MbreakPD is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT1_M1, model MbreakPD: Pd = 9.6e-007 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_rca_xr_MX_NOT1_M1, model MbreakPD: Ps = 9.6e-007 is less than W
+
+**** 01/17/22 12:37:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "VERIFY-Time"  [ C:\Cadence\Designs\VLSI-21\VLSI-21\datapath-pspicefiles\verify\time.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   S0) 26.97E-09  (   S1)    1.8000  (   S2)    1.8000  (   S3) 131.5E-09      
+
+( COUT) 16.91E-09  (N00487)    1.8000 (N14760)    0.0000 (rca_N01555)    1.8000 
+
+(rca_N01575)    1.8000                (rca_N01600) 26.97E-09                    
+
+(rca_N01641) 20.75E-09                (rca_N01682) 26.97E-09                    
+
+(rca_N01714) 26.97E-09                (rca_N01726)    1.8000                    
+
+(rca_N01762)    1.8000                (rca_N01852) 123.3E-09                    
+
+(rca_N01856)    1.8000                (rca_N01863)    1.8000                    
+
+(rca_N01870) 138.0E-09                (rca_xr_MX_SB) 20.75E-09                  
+
+(rca_add1_TEST)    1.8000             (rca_add2_TEST)    1.8000                 
+
+(rca_add3_TEST)    1.8000             (rca_add4_TEST)     .4020                 
+
+(rca_xr1_MX_SB)    1.8000             (rca_xr2_MX_SB)    1.8000                 
+
+(rca_xr3_MX_SB)    1.8000             (rca_xr_N00108)    1.8000                 
+
+(rca_xr1_N00108)    1.8000            (rca_xr2_N00108)    1.8000                
+
+(rca_xr3_N00108)    1.8000            (rca_add1_N00627) 15.32E-15               
+
+(rca_add1_N00677) 46.03E-09           (rca_add1_N00805)     .3920               
+
+(rca_add1_N01621) 17.72E-09           (rca_add1_N01660) 22.82E-09               
+
+(rca_add1_N01678)    1.8000           (rca_add1_N01985) 45.65E-09               
+
+(rca_add1_N02047)    1.8000           (rca_add1_N02112)    1.7462               
+
+(rca_add2_N00627)     .0589           (rca_add2_N00677)     .0772               
+
+(rca_add2_N00805)    1.8000           (rca_add2_N01621)    1.5350               
+
+(rca_add2_N01660)     .0160           (rca_add2_N01678)    1.8000               
+
+(rca_add2_N01985)     .0814           (rca_add2_N02047)    1.8000               
+
+(rca_add2_N02112)    1.8000           (rca_add3_N00627)    1.5586               
+
+(rca_add3_N00677)     .0772           (rca_add3_N00805)    1.8000               
+
+(rca_add3_N01621) 68.98E-09           (rca_add3_N01660) 68.29E-09               
+
+(rca_add3_N01678)    1.8000           (rca_add3_N01985) 138.0E-09               
+
+(rca_add3_N02047)    1.8000           (rca_add3_N02112)    1.8000               
+
+(rca_add4_N00627) 3.878E-09           (rca_add4_N00677) 6.309E-09               
+
+(rca_add4_N00805)    1.7610           (rca_add4_N01621) 5.681E-15               
+
+(rca_add4_N01660) 43.84E-09           (rca_add4_N01678)    1.7287               
+
+(rca_add4_N01985) 87.68E-09           (rca_add4_N02047)    1.7825               
+
+(rca_add4_N02112)    1.7462           (rca_xr_MX_N00215) 111.4E-09              
+
+(rca_xr_MX_N00227)    1.8000          (rca_xr_MX_N00279) 198.1E-09              
+
+(rca_xr1_MX_N00215) 103.6E-09         (rca_xr1_MX_N00227)    1.8000             
+
+(rca_xr1_MX_N00279)    1.8000         (rca_xr2_MX_N00215) 103.6E-09             
+
+(rca_xr2_MX_N00227)    1.8000         (rca_xr2_MX_N00279)    1.8000             
+
+(rca_xr3_MX_N00215) 103.6E-09         (rca_xr3_MX_N00227)    1.8000             
+
+(rca_xr3_MX_N00279)    1.8000         
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.147E-04
+    V_V11        0.000E+00
+
+    TOTAL POWER DISSIPATION   5.66E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/17/22 12:37:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "VERIFY-Time"  [ C:\Cadence\Designs\VLSI-21\VLSI-21\datapath-pspicefiles\verify\time.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       14.19
+

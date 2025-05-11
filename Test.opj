@@ -1,0 +1,105 @@
+(ExpressProject "Test"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\test.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\test-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\test-pspicefiles\verify\verify.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\test-pspicefiles\schematic1\test.sim"
+        (DisplayName "SCHEMATIC1-Test")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\test-pspicefiles\verify\time.sim"
+        (DisplayName "VERIFY-TIME")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\test-pspicefiles\schematic1\time.sim"
+        (DisplayName "SCHEMATIC1-Time")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\test-pspicefiles\schematic1\time1.sim"
+        (DisplayName "SCHEMATIC1-Time1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\test-pspicefiles\schematic1\dc.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\test-pspicefiles\schematic1\dc.sim"
+        (DisplayName "SCHEMATIC1-DC")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "C:\Cadence\SPB_16.5\tools\pspice\library\UMC_018-TT.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Cadence\SPB_16.5\tools\pspice\library\UMC_018-TT.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-R
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN4D
+      (FullPartName "MbreakN4D.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakP4D
+      (FullPartName "MbreakP4D.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.5\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\VLSI_A\Documents\ORCAD\DESIGNS\VLSI-21\test.dsn")
+      (Path "Design Resources"
+         "C:\Users\VLSI_A\Documents\ORCAD\DESIGNS\VLSI-21\test.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\VLSI_A\Documents\ORCAD\DESIGNS\VLSI-21\test.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 0 675 -8 -31 -4 196 1 280"))
+      (Tab 0))))

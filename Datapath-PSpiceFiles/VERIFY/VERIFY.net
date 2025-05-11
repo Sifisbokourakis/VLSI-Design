@@ -1,0 +1,850 @@
+* source DATAPATH
+V_V1         N00487 0 1.8Vdc
+M_rca_xr_MX_PassGate2_M1         rca_xr_MX_N00227 rca_xr_MX_SB rca_xr_MX_N00279
++  0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate2_M2         rca_xr_MX_N00279 N00487 rca_xr_MX_N00227
++  N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT1_M1         rca_xr_MX_N00215 rca_xr_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT1_M2         rca_xr_MX_N00215 rca_xr_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT2_M1         rca_xr_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT2_M2         rca_xr_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT3_M1         rca_xr_MX_SB N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT3_M2         rca_xr_MX_SB N00487 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate1_M1         rca_xr_MX_N00215 N00487 rca_xr_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_PassGate1_M2         rca_xr_MX_N00279 rca_xr_MX_SB rca_xr_MX_N00215
++  N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_MX_NOT4_M1         rca_N01555 rca_xr_MX_N00279 N00487 N00487 MbreakPD 
++  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr_MX_NOT4_M2         rca_N01555 rca_xr_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr_NT_M1         rca_xr_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr_NT_M2         rca_xr_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nto1_M1         S2 rca_N01870 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_nto1_M2         S2 rca_N01870 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_nto_M1         S0 rca_N01575 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_nto_M2         S0 rca_N01575 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_nt1_M1         0 rca_N01600 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt1_M2         0 rca_N01600 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt3_M1         rca_N01726 rca_N01714 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt3_M2         rca_N01726 rca_N01714 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt2_M1         rca_N01762 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt2_M2         rca_N01762 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M14         rca_add2_N00805 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M12         rca_add2_N02112 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M9         rca_N01856 rca_N01641 rca_add2_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M7         rca_add2_N00677 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M27         rca_add2_TEST 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M6         rca_add2_N00627 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M25         rca_add2_N02047 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M1         rca_add2_N00627 rca_N01641 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M23         S1 rca_N01852 rca_add2_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M21         S1 rca_N01856 rca_add2_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M19         rca_add2_N01985 rca_N01641 rca_add2_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M17         rca_add2_N01621 rca_N01852 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M15         rca_add2_N01621 rca_N01641 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M13         rca_add2_N00805 rca_N01641 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M10         rca_N01856 rca_N01852 rca_add2_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M8         rca_N01856 rca_N01852 rca_add2_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add2_M11         rca_N01856 rca_N01641 rca_add2_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M28         rca_add2_TEST rca_N01641 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M26         rca_add2_TEST rca_N01852 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M24         rca_add2_N01678 rca_N01641 rca_add2_N02047 N00487
++  MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add2_M22         S1 rca_N01856 rca_add2_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add2_M20         S1 rca_N01852 rca_add2_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M18         rca_add2_N01660 0 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add2_M16         rca_add2_N01621 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate2_M1         rca_xr1_MX_N00227 rca_xr1_MX_SB
++  rca_xr1_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate2_M2         rca_xr1_MX_N00279 0 rca_xr1_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT1_M1         rca_xr1_MX_N00215 rca_xr1_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT1_M2         rca_xr1_MX_N00215 rca_xr1_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT2_M1         rca_xr1_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT2_M2         rca_xr1_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT3_M1         rca_xr1_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT3_M2         rca_xr1_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate1_M1         rca_xr1_MX_N00215 0 rca_xr1_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_PassGate1_M2         rca_xr1_MX_N00279 rca_xr1_MX_SB
++  rca_xr1_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_MX_NOT4_M1         rca_N01600 rca_xr1_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr1_MX_NOT4_M2         rca_N01600 rca_xr1_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr1_NT_M1         rca_xr1_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr1_NT_M2         rca_xr1_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M14         rca_add1_N00805 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M12         rca_add1_N02112 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M9         rca_N01852 N00487 rca_add1_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M7         rca_add1_N00677 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M27         rca_add1_TEST rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M6         rca_add1_N00627 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M25         rca_add1_N02047 rca_N01555 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M1         rca_add1_N00627 N00487 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M23         rca_N01575 N14760 rca_add1_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M21         rca_N01575 rca_N01852 rca_add1_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M19         rca_add1_N01985 N00487 rca_add1_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M17         rca_add1_N01621 N14760 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M15         rca_add1_N01621 N00487 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M13         rca_add1_N00805 N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M10         rca_N01852 N14760 rca_add1_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M8         rca_N01852 N14760 rca_add1_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add1_M11         rca_N01852 N00487 rca_add1_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M28         rca_add1_TEST N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M26         rca_add1_TEST N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M24         rca_add1_N01678 N00487 rca_add1_N02047 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add1_M22         rca_N01575 rca_N01852 rca_add1_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add1_M20         rca_N01575 N14760 rca_add1_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M18         rca_add1_N01660 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add1_M16         rca_add1_N01621 rca_N01555 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate2_M1         rca_xr2_MX_N00227 rca_xr2_MX_SB
++  rca_xr2_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate2_M2         rca_xr2_MX_N00279 0 rca_xr2_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT1_M1         rca_xr2_MX_N00215 rca_xr2_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT1_M2         rca_xr2_MX_N00215 rca_xr2_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT2_M1         rca_xr2_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT2_M2         rca_xr2_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT3_M1         rca_xr2_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT3_M2         rca_xr2_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate1_M1         rca_xr2_MX_N00215 0 rca_xr2_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_PassGate1_M2         rca_xr2_MX_N00279 rca_xr2_MX_SB
++  rca_xr2_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_MX_NOT4_M1         rca_N01682 rca_xr2_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr2_MX_NOT4_M2         rca_N01682 rca_xr2_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr2_NT_M1         rca_xr2_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr2_NT_M2         rca_xr2_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M14         rca_add4_N00805 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M12         rca_add4_N02112 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M9         COUT rca_N01762 rca_add4_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M7         rca_add4_N00677 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M27         rca_add4_TEST rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M6         rca_add4_N00627 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M25         rca_add4_N02047 rca_N01726 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M1         rca_add4_N00627 rca_N01762 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M23         S3 rca_N01863 rca_add4_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M21         S3 COUT rca_add4_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M19         rca_add4_N01985 rca_N01762 rca_add4_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M17         rca_add4_N01621 rca_N01863 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M15         rca_add4_N01621 rca_N01762 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M13         rca_add4_N00805 rca_N01762 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M10         COUT rca_N01863 rca_add4_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M8         COUT rca_N01863 rca_add4_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add4_M11         COUT rca_N01762 rca_add4_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M28         rca_add4_TEST rca_N01762 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M26         rca_add4_TEST rca_N01863 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M24         rca_add4_N01678 rca_N01762 rca_add4_N02047 N00487
++  MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add4_M22         S3 COUT rca_add4_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add4_M20         S3 rca_N01863 rca_add4_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M18         rca_add4_N01660 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add4_M16         rca_add4_N01621 rca_N01726 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate2_M1         rca_xr3_MX_N00227 rca_xr3_MX_SB
++  rca_xr3_MX_N00279 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate2_M2         rca_xr3_MX_N00279 0 rca_xr3_MX_N00227 N00487
++  MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT1_M1         rca_xr3_MX_N00215 rca_xr3_N00108 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT1_M2         rca_xr3_MX_N00215 rca_xr3_N00108 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT2_M1         rca_xr3_MX_N00227 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT2_M2         rca_xr3_MX_N00227 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT3_M1         rca_xr3_MX_SB 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT3_M2         rca_xr3_MX_SB 0 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate1_M1         rca_xr3_MX_N00215 0 rca_xr3_MX_N00279 0
++  MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_PassGate1_M2         rca_xr3_MX_N00279 rca_xr3_MX_SB
++  rca_xr3_MX_N00215 N00487 MbreakPD  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_MX_NOT4_M1         rca_N01714 rca_xr3_MX_N00279 N00487 N00487
++  MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_xr3_MX_NOT4_M2         rca_N01714 rca_xr3_MX_N00279 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=1440n  
++ PS=1440n     
+M_rca_xr3_NT_M1         rca_xr3_N00108 N14760 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_xr3_NT_M2         rca_xr3_N00108 N14760 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_nt_M1         rca_N01641 N00487 N00487 N00487 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_rca_nt_M2         rca_N01641 N00487 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M14         rca_add3_N00805 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M12         rca_add3_N02112 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M9         rca_N01863 0 rca_add3_N00677 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M7         rca_add3_N00677 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M27         rca_add3_TEST rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M6         rca_add3_N00627 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M25         rca_add3_N02047 rca_N01682 N00487 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M1         rca_add3_N00627 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M23         rca_N01870 rca_N01856 rca_add3_N01678 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M21         rca_N01870 rca_N01863 rca_add3_N01621 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M19         rca_add3_N01985 0 rca_add3_N01660 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M17         rca_add3_N01621 rca_N01856 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M15         rca_add3_N01621 0 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M13         rca_add3_N00805 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M10         rca_N01863 rca_N01856 rca_add3_N00805 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M8         rca_N01863 rca_N01856 rca_add3_N00627 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+M_rca_add3_M11         rca_N01863 0 rca_add3_N02112 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M28         rca_add3_TEST 0 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M26         rca_add3_TEST rca_N01856 N00487 N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M24         rca_add3_N01678 0 rca_add3_N02047 N00487 MbreakPD  
++ L=180n  
++ W=3600n    
++ PD=7680n  
++ PS=7680n     
+M_rca_add3_M22         rca_N01870 rca_N01863 rca_add3_TEST N00487 MbreakPD  
++ L=180n  
++ W=2400n    
++ PD=5280n  
++ PS=5280n     
+M_rca_add3_M20         rca_N01870 rca_N01856 rca_add3_N01985 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M18         rca_add3_N01660 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=720n    
++ PD=1920n  
++ PS=1920n     
+M_rca_add3_M16         rca_add3_N01621 rca_N01682 0 0 MbreakND  
++ L=180n  
++ W=480n    
++ PD=960n  
++ PS=960n     
+V_V11         N14760 0  
++PULSE 0 1.8 0 10p 10p 990p 2n

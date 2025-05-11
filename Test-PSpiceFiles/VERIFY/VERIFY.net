@@ -1,0 +1,22 @@
+* source TEST
+M_NOT1_M1         OUT1 IN N00479 N00479 MbreakPD  
++ L=180n  
++ W=240n         
+M_NOT1_M2         OUT1 IN 0 0 MbreakND  
++ L=180n  
++ W=240n         
+V_V1         N00479 0 1.8Vdc
+V_V2         IN 0  
++PULSE 0 1.8 0 10p 10p 490p 1n
+M_NOT2_M1         OUT2 OUT1 N00479 N00479 MbreakPD  
++ L=180n  
++ W=240n         
+M_NOT2_M2         OUT2 OUT1 0 0 MbreakND  
++ L=180n  
++ W=240n         
+M_NOT3_M1         N00701 OUT1 N00479 N00479 MbreakPD  
++ L=180n  
++ W=240n         
+M_NOT3_M2         N00701 OUT1 0 0 MbreakND  
++ L=180n  
++ W=240n         

@@ -1,0 +1,19 @@
+** Profile: "VERIFY-TIME"  [ C:\Users\VLSI_A\Documents\ORCAD\DESIGNS\VLSI-21\Test-PSpiceFiles\VERIFY\TIME.sim ] 
+
+** Creating circuit file "TIME.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_16.5/tools/pspice/library/UMC_018-TT.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 1p 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\VERIFY.net" 
+
+
+.END

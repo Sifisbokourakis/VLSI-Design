@@ -1,0 +1,14 @@
+* source TEST
+M_M1         VOUT VIN N00180 N00180 MbreakPD  
++ L=180n  
++ W=1200n    
++ PD=960n  
++ PS=960n     
+M_M2         VOUT VIN 0 0 MbreakND  
++ L=180n  
++ W=240n    
++ PD=960n  
++ PS=960n     
+V_V1         N00180 0 1.8Vdc
+V_V2         VIN 0  
++PULSE 0 1.8 0 10p 10p 490p 1n

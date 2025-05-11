@@ -1,0 +1,72 @@
+(ExpressProject "Datapath"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\datapath.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (Board_sim_option "VHDL_flow")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\datapath-pspicefiles\verify\verify.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\datapath-pspicefiles\verify\time.sim"
+        (DisplayName "VERIFY-Time")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\datapath-pspicefiles\verify\time.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-R
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (MbreakP4D
+      (FullPartName "MbreakP4D.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakN4D
+      (FullPartName "MbreakN4D.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Cadence\Designs\VLSI-21\VLSI-21\datapath.dsn")
+      (Path "Design Resources"
+         "C:\Cadence\Designs\VLSI-21\VLSI-21\datapath.dsn" "VERIFY")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -30 0 200 0 430"))
+      (Tab 0))))
